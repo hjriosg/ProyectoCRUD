@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="#" />
+    <title>CRUD Ucamp</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">Listado de Asistencia de Clientes</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formCap">
+                            <div class="form-group">
+                                <input type="text" id="nombre" placeholder="Nombre" class="form-control">
+                            </div>
+                            <div class="form-group pt-3">
+                                <input type="text" id="apellido" placeholder="Apellido" class="form-control">
+                            </div>
+                            <div class="form-group pt-3 mt-3">
+                                <label for="zona">Seleccione Zona Entrada --</label>
+                                 <select id="zona" class="custom-select float-md-end">
+                                    <option value="Alberca">Alberca</option>
+                                    <option value="Sauna">Sauna</option>
+                                    <option value="Cardio">Cardio</option>
+                                    <option value="Pesas">Pesas</option>
+                                    <option value="Spinning">Spinning</option>
+                                    <option value="Salones">Salones</option>
+                                    <option value="Comedor">Comedor</option>
+                                 </select>
+                            </div>
+                            <div class="d-grid gap-2 d-md-block pt-3 col-3 mx-auto">
+                                <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+             <div id="personsList">
+                    
+             </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--
+<div class="card-body text-white bg-secondary mb-3">
+    <h5 class="card-title">Nombre y Apellido del Cliente</h5>
+    <p class="card-text">Area en la que se encuentra</p>
+    <a href="#" class="btn btn-primary">Eliminar</a>
+    <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#formCap">Editar</a>
+  </div> -->
